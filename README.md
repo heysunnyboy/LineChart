@@ -5,6 +5,7 @@ ios 折线图绘制
 2 当数据只为正数，折线只在x轴上方演示
 3 当数据只为负数 ，折现则只在x轴下方演示
 4 当数据全为0 ，那么就只显示一条横线（具体演示如下图所示）
+
 ![Untitled.gif](http://upload-images.jianshu.io/upload_images/1306084-d2242d0028592772.gif?imageMogr2/auto-orient/strip)
 
 需求大致了解，那么我先把需求细化（这个demo 上下方最多只画两条线）
@@ -18,7 +19,9 @@ ios 折线图绘制
 12 个月的数据10，200,3000,400,-1300,-801,650
 
 我们要根据不同的情况画出y轴显示对应的分割线如下图
+
 ![Untitled1.gif](http://upload-images.jianshu.io/upload_images/1306084-35f0d70ca9da1539.gif?imageMogr2/auto-orient/strip)
+
 因此该显示多少条分割线是根据数据来判断来看看具体实现的代码
 
 ``` python
